@@ -1,0 +1,15 @@
+{
+  "name": "create-competitive-app",
+  "version": "1.0.0",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "bin": {
+    "create-competitve-app": "./bin/index.js"
+  }
+}
