@@ -23,7 +23,7 @@ const run = (command, args, options = {}, spawner = spawn) =>
 const existsTemplates = {
   cpp: true,
   kotlin: true,
-  python: false
+  python: true
 }
 
 program.version('1.0.0')

@@ -1,3 +1,6 @@
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+
 #include <iostream>
 #include <algorithm>
 #include <sstream>
@@ -11,6 +14,8 @@
 #include <queue>
 #include <iomanip>
 
+#define pw(x) (1ll << x)
+#define sz(x) (int)x.size()
 #define pll pair<ll, ll>
 #define m_p make_pair
 #define sqr(a) (a) * (a)
