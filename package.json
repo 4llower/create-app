@@ -2,14 +2,28 @@
   "name": "create-competitive-app",
   "version": "1.0.0",
   "main": "bin/index.js",
-  "scripts": {
-    "start": "node ."
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "scripts": {
+    "test": "bash test.bash"
+  },
   "bin": {
     "create-competitve-app": "./bin/index.js"
+  },
+  "dependencies": {
+    "commander": "^6.2.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
   }
 }
