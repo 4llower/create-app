@@ -32,6 +32,11 @@ create-competitive-app --project nameYourProject --template cpp
 npm install -g .
 ```
 
+## Windows
+
+1. Follow to bin and open index.js
+2. Change line `#!/usr/bin/env node` to `#!path/to/node`
+
 ## Requirements
 
 Global(needs everywhere):
