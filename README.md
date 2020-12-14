@@ -31,3 +31,23 @@ create-competitive-app --project nameYourProject --template cpp
 ```bash
 npm install -g .
 ```
+
+## Requirements
+
+Global(needs everywhere):
+
+- [Makefile](https://www.gnu.org/software/make/)
+- [Npm and Nodejs](https://nodejs.org/en/download/)
+
+Python:
+
+- [Python3](https://www.python.org/)
+
+Kotlin:
+
+- [Kotlin](https://kotlinlang.org/docs/tutorials/command-line.html)
+- [Java](https://www.java.com/ru/download/)
+
+C++:
+
+- [MinGW](https://sourceforge.net/projects/mingw-w64/)
