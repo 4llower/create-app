@@ -2,8 +2,8 @@
 
 const path = require('path')
 const { spawn } = require('child_process')
-const _ = require('lodash')
 const { Command } = require('commander')
+const fs = require('fs')
 const program = new Command()
 
 const fromRoot = (relative) => path.resolve(__dirname, '..', relative)
@@ -20,11 +20,7 @@ const run = (command, args, options = {}, spawner = spawn) =>
     proc.on('exit', resolve)
   })
 
-const existsTemplates = {
-  cpp: true,
-  kotlin: true,
-  python: true
-}
+const existsTemplates = ['cpp', 'kotlin', 'cpp']
 
 program.version('1.0.0')
   .command('init')
@@ -33,12 +29,19 @@ program.version('1.0.0')
   .requiredOption('-t, --template <template>', 'Name of initialized project')
   .action(async (options) => {
     const { template, project } = options
-    if (!_.has(existsTemplates, template) || !existsTemplates[template]) {
-      console.log(`Please specify the correct template(--template) 
-                   [${Object.keys(existsTemplates).filter(key => !!existsTemplates[key]).join(', ')}]`)
+    if (!existsTemplates.includes(template)) {
+      console.log(`Specify the correct template(--template) 
+                   [${existsTemplates.join(', ')}]`)
       return
     }
     await run('cp', ['-r', fromRoot('templates/' + template), project])
   })
 
+program.command('test')
+  .description('Compare answers with correct(slow) and testee(fast) solution')
+  .action((options) => {
+    if (!(fs.existsSync(path.resolve('./cc-app.json')))) {
+      console.log('Create the file "cc-app.json" in root of working folder')
+    }
+  })
 program.parse(process.argv)

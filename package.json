@@ -1,16 +1,13 @@
 {
-  "name": "create-competitive-app",
+  "name": "cc-app",
   "version": "1.0.0",
   "main": "bin/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "scripts": {
-    "test": "bash test.bash"
-  },
   "bin": {
-    "create-competitve-app": "./bin/index.js"
+    "cc-app": "./bin/index.js"
   },
   "dependencies": {
     "commander": "^6.2.0",

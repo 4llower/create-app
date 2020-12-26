@@ -10,7 +10,7 @@ To install, you can use [npm](https://npmjs.org/):
 git clone https://github.com/4llower/create-competitive-app
 cd create-competitive-app
 npm install -g .
-# + create-competitive-app@1.0.0
+# + cc-app@1.0.0
 # updated 1 package in 0.788s
 ```
 
@@ -19,7 +19,7 @@ npm install -g .
 Available C++, Python, Kotlin templates
 
 ```bash
-create-competitive-app --project nameYourProject --template cpp
+cc-app --project nameYourProject --template cpp
 ```
 
 ## Change template
@@ -29,7 +29,7 @@ create-competitive-app --project nameYourProject --template cpp
 3. Going to root create-competitive-app and run
 
 ```bash
-npm install -g .
+make all
 ```
 
 ## Windows
