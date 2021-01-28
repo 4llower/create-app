@@ -7,9 +7,7 @@ Simple utility to create project from different template for solving programming
 To install, you can use [npm](https://npmjs.org/):
 
 ```bash
-git clone https://github.com/4llower/create-competitive-app
-cd create-competitive-app
-npm install -g .
+npm install -g cc-app
 # + cc-app@1.0.0
 # updated 1 package in 0.788s
 ```
