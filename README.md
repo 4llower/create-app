@@ -2,6 +2,9 @@
 
 Simple utility to create project from different template for solving programming tasks
 
+## Templates
+```TASM, C++, Kotlin, Python```
+
 ## Installation
 
 To install, you can use [npm](https://npmjs.org/):
