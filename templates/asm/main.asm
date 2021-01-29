@@ -1,11 +1,13 @@
 .model small
 .stack 100h
 .data
+    message db "Hello world!$"
 .code
 main:
     mov  ax, @data
     mov  ds, ax
-    lea dx, "Hello world!$"
+    mov ah, 09h
+    lea dx, message
     int 21h
 return:
     mov  ah, 4ch
