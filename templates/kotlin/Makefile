@@ -1,13 +1,16 @@
-all:
-	echo "Сompilation started..."
-	kotlinc main.kt -include-runtime -d main.jar
-	echo "Compilation completed!"
+ENTRY=main
 
-	if [[ ! -d ./debug ]]
-	then
-		echo "Creation a folder ./debug"
-		mkdir debug
-	fi
-	mv main.jar ./debug
+all: create_debug build run
 
-	java -jar ./debug/main.jar
+build:
+	clear
+	echo "Build started..."
+	kotlinc $(ENTRY).kt -include-runtime -d $(ENTRY).jar
+	echo "Build completed!"
+	mv $(ENTRY).jar ./debug
+run:
+	clear
+	java -jar ./debug/$(ENTRY).jar
+
+create_debug:
+	@if [[ ! -d ./debug ]]; then mkdir debug; fi;

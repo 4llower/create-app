@@ -1,6 +1,7 @@
 def main():
     # fin = open('input.txt', 'r')
     # fout = open('output.txt', 'w')
+    print('Hello world!')
 
 
 if __name__ == "__main__":
