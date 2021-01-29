@@ -20,7 +20,9 @@ npm install -g cc-app
 Available C++, Python, Kotlin templates
 
 ```bash
-cc-app --project nameYourProject --template cpp
+cc-app --pname nameYourProject --template cpp
+or
+cc-app -p nameYourProject -t cpp
 ```
 
 ## Change template

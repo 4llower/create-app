@@ -25,10 +25,10 @@ const existsTemplates = ['cpp', 'kotlin', 'cpp', 'asm']
 program.version('1.0.0')
   .command('init')
   .description('Inits project with chosen template')
-  .requiredOption('-p, --project <project>', 'Name of initialized project')
+  .requiredOption('-p, --pname <pname>', 'Name of initialized project')
   .requiredOption('-t, --template <template>', 'Name of initialized project')
   .action(async (options) => {
-    const { template, project } = options
+    const { template, pname } = options
     if (!existsTemplates.includes(template)) {
       console.log(`Specify the correct template(--template) 
                    [${existsTemplates.join(', ')}]`)
