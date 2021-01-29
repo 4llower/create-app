@@ -20,7 +20,7 @@ const run = (command, args, options = {}, spawner = spawn) =>
     proc.on('exit', resolve)
   })
 
-const existsTemplates = ['cpp', 'kotlin', 'cpp']
+const existsTemplates = ['cpp', 'kotlin', 'cpp', 'asm']
 
 program.version('1.0.0')
   .command('init')
@@ -38,7 +38,7 @@ program.version('1.0.0')
   })
 
 program.command('test')
-  .description('Compare answers with correct(slow) and testee(fast) solution')
+  .description('Compare answers with correct(slow) and test (fast) solution')
   .action((options) => {
     if (!(fs.existsSync(path.resolve('./cc-app.json')))) {
       console.log('Create the file "cc-app.json" in root of working folder')
