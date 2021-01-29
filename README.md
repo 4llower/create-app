@@ -1,6 +1,6 @@
 # create-competitive-app
 
-Simple utility to create project from different template for solving programming tasks
+Utility for different languages project initialize with Makefile
 
 ## Templates
 ```TASM, C++, Kotlin, Python```
