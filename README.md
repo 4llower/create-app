@@ -1,4 +1,4 @@
-# create-competitive-app
+# create-app
 
 Utility for different languages project initialize with Makefile
 
