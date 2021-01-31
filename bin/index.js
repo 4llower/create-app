@@ -34,7 +34,7 @@ program.version('1.0.0')
                    [${existsTemplates.join(', ')}]`)
       return
     }
-    await run('cp', ['-r', fromRoot('templates/' + template), project])
+    await run('cp', ['-r', fromRoot('templates/' + template), pname])
   })
 
 program.command('test')
