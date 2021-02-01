@@ -10,7 +10,7 @@ Utility for different languages project initialize with Makefile
 To install, you can use [npm](https://npmjs.org/):
 
 ```bash
-npm install -g cc-app
+npm install -g 
 # + cc-app@1.0.0
 # updated 1 package in 0.788s
 ```
@@ -20,9 +20,9 @@ npm install -g cc-app
 Available C++, Python, Kotlin templates
 
 ```bash
-cc-app --pname nameYourProject --template cpp
+cc-app init --pname nameYourProject --template cpp
 or
-cc-app -p nameYourProject -t cpp
+cc-app init -p nameYourProject -t cpp
 ```
 
 ## Change template
